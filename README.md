@@ -1,18 +1,6 @@
 # BitBuddy: A virtual pet web app
 ![BitBuddy header](https://user-images.githubusercontent.com/96971685/196337419-431e0df8-c5ee-4bd9-9831-19609d7922f4.png)
 
-Live link: [Try out BitBuddy](http://bitbuddy.hanazait.com/)  
-Demo: [Watch Hackbright Demo Day video](https://youtu.be/aJK0rel3F_0)
-
-
-## Table of Contents
-- [Project Description](https://github.com/hanazzz/virtual-pet-app#project-description)
-- [Tech Stack](https://github.com/hanazzz/virtual-pet-app#tech-stack)
-- [Features](https://github.com/hanazzz/virtual-pet-app#features)
-- [Possible Future Features](https://github.com/hanazzz/virtual-pet-app#possible-future-features)
-- [Known Bugs](https://github.com/hanazzz/virtual-pet-app#known-bugs)
-- [Installation](https://github.com/hanazzz/virtual-pet-app#installation)
-
 
 ## Project Description
 BitBuddy is a virtual pet app inspired by digital pet games from the early/mid 2000s, but with a modern twist: AI. Users start by generating random pets until they find one they want to adopt. They can then customize their pet by using Craiyon, an AI image generator based on DALL-E, to generate a custom image for their pet. After adopting their new friend, users can feed and play with them. Just like a real pet, their pet’s happiness and energy decrease over time, and they prefer some foods and activities over others. BitBuddy also displays the current weather at their pet’s “location” (with the location coming from the user’s IP address and the weather coming from OpenWeatherMap’s API).
