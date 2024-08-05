@@ -50,7 +50,6 @@ APIs:
 - [IP API](https://ip-api.com/)
 - [Craiyon API](https://github.com/FireHead90544/craiyon.py)
 
-Pixel art made by Hanâ Zait
 
 
 ## Features
@@ -125,13 +124,9 @@ $ source env/bin/activate
 6. Install all **dependencies**
 ```
 $ pip3 install -r requirements.txt
-```
-7. Create the **database**
-```
-$ python3 seed_database.py
-```
-8. Start up the **Flask server**
+`````
+7. Start up the **Flask server**
 ```
 $ python3 server.py
 ```
-9. **Go to `localhost:5000` in your browser and have fun with BitBuddy!**
+8. **Go to `localhost:5000` in your browser and have fun with BitBuddy!**
