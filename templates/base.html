@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cyberpunk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A virtual pet app">
+
+    <!-- Daisy UI CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.31.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            corePlugins: {
+                preflight: false,
+            }
+        }
+    </script>
+
+    <!-- Fonts -->
+    <link href="https://fonts.cdnfonts.com/css/lcd-phone" rel="stylesheet">
+    <!-- Weather icons -->
+    <link rel="stylesheet" href="/static/css/vendors/weather-icons.min.css" type="text/css">
+    <!-- FontAwesome kit -->
+    <script src="https://kit.fontawesome.com/59746a953b.js" crossorigin="anonymous"></script>
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="/static/css/styles.css">
+
+    <!-- Load React, React DOM, Babel, React Prop-Types -->
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script crossorigin src="https://unpkg.com/@babel/standalone@7.19.2/babel.min.js"></script>
+    <script src="https://unpkg.com/prop-types@15.6/prop-types.js"></script>
+    <!-- ReactQuery -->
+    <script src="https://unpkg.com/@tanstack/react-query@4/build/umd/index.production.js"></script>
+    
+    <title>
+        {% block title %} TITLE GOES HERE {% endblock title %}
+    </title>
+</head>
+
+<body>
+
+    <!-- <main> -->
+        {% for msg in get_flashed_messages() %}
+            <div class="flash">
+                <p class="flash-msg">
+                    {{ msg }}
+                </p>
+            </div>
+        {% endfor %}
+
+        {% block body %}
+            BODY CONTENT GOES HERE
+        {% endblock body %}
+    <!-- </main> -->
+
+    <!-- My React Components -->
+    <script src="/static/react/general/Heading1.jsx" type="text/jsx"></script>
+    <script src="/static/react/general/Heading2.jsx" type="text/jsx"></script>
+    <script src="/static/react/general/Heading3.jsx" type="text/jsx"></script>
+    <script src="/static/react/general/Button.jsx" type="text/jsx"></script>
+    <script src="/static/react/general/Alert.jsx" type="text/jsx"></script>
+    <script src="/static/react/general/Card.jsx" type="text/jsx"></script>
+    <script src="/static/react/general/ModalBtn.jsx" type="text/jsx"></script>
+    <script src="/static/react/general/ModalTitle.jsx" type="text/jsx"></script>
+    <script src="/static/react/general/ModalFooter.jsx" type="text/jsx"></script>
+    <script src="/static/react/general/ModalBox.jsx" type="text/jsx"></script>
+    <script src="/static/react/general/navbar/About.jsx" type="text/jsx"></script>
+    <script src="/static/react/general/navbar/Navbar.jsx" type="text/jsx"></script>
+    <script src="/static/react/general/Footer.jsx" type="text/jsx"></script>
+    {% block scripts %}
+        
+    {% endblock scripts %}
+</body>
+
+</html>

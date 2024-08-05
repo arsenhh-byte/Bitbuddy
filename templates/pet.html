@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block title %} BitBuddy: A virtual pet app {% endblock title %}
+
+{% block body %}
+
+    <div id="app" class="">
+        <p>Loading...</p>
+    </div>
+
+{% endblock body %}
+
+{% block scripts %}
+    <!-- custom hooks -->
+    <script src="/static/react/app/useCustomImg.jsx" type="text/jsx"></script>
+    <script src="/static/react/app/usePetData.jsx" type="text/jsx"></script>
+
+    <!-- navbar/settings components -->
+    <script src="/static/react/general/navbar/Logout.jsx" type="text/jsx"></script>
+    <script src="/static/react/general/navbar/DeleteObj.jsx" type="text/jsx"></script>
+    <script src="/static/react/general/navbar/RenamePet.jsx" type="text/jsx"></script>
+    <script src="/static/react/general/navbar/Settings.jsx" type="text/jsx"></script>
+
+    <!-- misc. child components -->
+    <script src="/static/react/general/navbar/ToggleTempUnit.jsx" type="text/jsx"></script>
+    <script src="/static/react/general/SelectInput.jsx" type="text/jsx"></script>
+    <script src="/static/react/app/PetAttributes.jsx" type="text/jsx"></script>
+    <script src="/static/react/app/currentPet/PetHeading.jsx" type="text/jsx"></script>
+    <script src="/static/react/app/currentPet/AttributesModal.jsx" type="text/jsx"></script>
+    <script src="/static/react/app/currentPet/WeatherDisplay.jsx" type="text/jsx"></script>
+    <script src="/static/react/app/currentPet/Mood.jsx" type="text/jsx"></script>
+    <script src="/static/react/app/currentPet/StatDisplay.jsx" type="text/jsx"></script>
+    <script src="/static/react/app/currentPet/Stat.jsx" type="text/jsx"></script>
+    <script src="/static/react/app/currentPet/Interaction.jsx" type="text/jsx"></script>
+    <script src="/static/react/app/generatePet/CustomPetCreator.jsx" type="text/jsx"></script>
+    <script src="/static/react/app/generatePet/SpeciesToggle.jsx" type="text/jsx"></script>
+    <script src="/static/react/app/generatePet/AdoptPet.jsx" type="text/jsx"></script>
+    <script src="/static/react/app/generatePet/GeneratePetBtn.jsx" type="text/jsx"></script>
+    <script src="/static/react/app/generatePet/PotentialPet.jsx" type="text/jsx"></script>
+
+    <!-- top-level components -->
+    <script src="/static/react/app/currentPet/CurrentPet.jsx" type="text/jsx"></script>
+    <script src="/static/react/app/generatePet/PetGenerator.jsx" type="text/jsx"></script>
+    <script src="/static/react/app/App.jsx" type="text/jsx"></script>
+{% endblock scripts %}

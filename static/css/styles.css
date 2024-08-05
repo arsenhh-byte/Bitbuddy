@@ -1,0 +1,199 @@
+body {
+    background-image: url('/static/images/clouds-bg.png');
+}
+
+td, th {
+    word-wrap: break-word !important;
+    white-space: normal !important;
+}
+
+input[type="radio"]:not(:checked) {
+    background-color: #F8F7C9 !important;
+    color: #686E78 !important;
+    border: none !important;
+}
+
+.font-lcd {
+    font-family: 'lcd phone', sans-serif;
+}
+
+#mood-text {
+    font-family: 'lcd phone', sans-serif;
+    background-color: #91b8a5;
+    box-shadow: inset 0 2px 4px 0 rgb(114 114 114 / 51%);
+}
+
+#about-modal p {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+/* CSS HSL */
+/* --cambridge-blue: hsla(151, 22%, 65%, 1); */
+/* --corn: hsla(54, 97%, 65%, 1); */
+/* --cotton-candy: hsla(330, 70%, 83%, 1); */
+/* --hunter-green: hsla(139, 20%, 28%, 1); */
+/* --independence: hsl(257, 10%, 36%) */
+/* --purple-navy: hsla(225, 30%, 40%, 1); */
+/* --atomic-tangerine: hsla(23, 100%, 65%, 1); */
+/* --baby-powder: hsl(36, 100%, 99%); */
+/* --cultured: hsl(210, 20%, 96%); */
+/* --light-gray: hsl(216, 12%, 84%) */
+/* --jet: hsl(0, 0%, 20%) */
+
+/* --green-yellow-crayola: hsla(59, 78%, 75%, 1); */
+/* --khaki-x-11-light-khaki: hsla(59, 78%, 72%, 1); */
+/* --corn: hsla(59, 78%, 64%, 1); */
+/* --yellow-green-crayola: hsla(81, 63%, 78%, 1); */
+/* --thistle: hsla(274, 48%, 85%, 1); */
+/* --wisteria: hsla(275, 48%, 79%, 1); */
+/* --light-steel-blue: hsla(217, 57%, 79%, 1); */
+/* --wild-blue-yonder: hsla(217, 57%, 73%, 1); */
+
+/* --davys-grey: hsla(222, 6%, 32%, 1); */
+/* --eerie-black: hsla(220, 7%, 8%, 1); */
+
+
+[data-theme='cyberpunk'] {
+    --corn: 54 97% 65%;
+    --cotton-candy: 330 70% 83%;
+    --hunter-green: 139 20% 28%;
+    --independence: 257 10% 36%;
+    --purple-navy: 225 30% 40%;
+    --atomic-tangerine: 23 100% 65%;
+    --baby-powder: 36 100% 99%;
+    --cultured: 60 14% 96%;
+    --light-gray: 216 12% 84%;
+    --jet: 0 0% 20%;
+
+    --color-1: 59 78% 75%;
+    --color-1-dark: 59 78% 64%;
+    --color-2: 81 63% 78%;
+    --color-3: 274 48% 85%;
+    --color-3-dark: 275 48% 79%;
+    --color-4: 217 57% 79%;
+    --color-4-dark: 217 57% 73%;
+    --dark-text: 220 7% 8%;
+
+  /* primary */
+  --p: var(--color-1);
+  /* primary focus */
+  --pf: var(--color-1-dark);
+  /* primary content */
+  --pc: var(--dark-text);
+
+  /* secondary */
+  --s: var(--color-2);
+  /* secondary focus */
+  /* --sf: 316 70% 100%; */
+  /* secondary content */
+  --sc: var(--dark-text);
+
+  /* accent */
+  --a: var(--color-3);
+  /* accent focus */
+  --af: var(--color-3-dark);
+  /* accent content */
+  --ac: var(--dark-text);
+
+  /* info */
+  /* --in: 198 93% 60%; */
+  /* info content */
+  /* --inc: 198 100% 12%; */
+
+  /* success */
+  /* --su: 158 64% 52%; */
+  /* success content */
+  /* --suc: 158 100% 10%; */
+
+  /* warning */
+  /* --wa: 43 96% 56%; */
+  /* warning content */
+  /* --wac: 43 100% 11%; */
+
+  /* error */
+  /* --er: 0 91% 71%; */
+  /* error content */
+  /* --erc: 0 100% 14%; */
+
+  /* neutral */
+  --n: var(--color-4);
+  /* neutral focus */
+  --nf: var(--color-4-dark);
+  /* neutral content */
+  --nc: var(--dark-text);
+
+  /* base 100 */
+  --b1: var(--baby-powder);
+  /* base 200 */
+  --b2: var(--cultured);
+  /* base 300 */
+  --b3: var(--light-gray);
+  /* base content */
+  --bc: var(--jet);
+
+  /* other settings */
+  /* --rounded-box: 1rem;
+  --rounded-btn: 0.25rem;
+  --rounded-badge: 1.9rem;
+  --animation-btn: 0.25s;
+  --animation-input: 0.2s;
+  --btn-text-case: capitalize;
+  --btn-focus-scale: 0.95;
+  --border-btn: 1px;
+  --tab-border: 1px;
+  --tab-radius: 0.5rem; */
+}
+
+
+/* html {
+    font-family: sans-serif;
+}
+
+form {
+    border: 2px grey solid;
+    border-radius: .5rem;
+    padding: 1rem
+}
+
+input {
+    margin: .25rem;
+}
+
+img {
+    border-radius: .5rem;
+}
+
+td:first {
+    font-weight: bolder;
+    font-size: larger;
+}
+
+caption {
+    caption-side: top;
+}
+
+button {
+    margin: 1rem;
+}
+
+.row {
+    margin: .5rem .2rem;
+}
+
+.flash {
+    color: red;
+    font-size: large;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.stat-square {
+    padding: .5rem 1rem;
+    font-size: 2.5em;
+}
+
+#weather {
+    font-size: larger;
+    font-weight: 700;
+} */
